@@ -1,0 +1,703 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		008296789458759C62034F78 /* Pods_beau.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DC83D040857D4008022CFC6 /* Pods_beau.framework */; };
+		709076C21CB5A1F3009A3101 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709076C11CB5A1F3009A3101 /* AppDelegate.swift */; };
+		709076C71CB5A1F3009A3101 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 709076C51CB5A1F3009A3101 /* Main.storyboard */; };
+		709076CA1CB5A1F3009A3101 /* beau.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 709076C81CB5A1F3009A3101 /* beau.xcdatamodeld */; };
+		709076CC1CB5A1F4009A3101 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 709076CB1CB5A1F4009A3101 /* Assets.xcassets */; };
+		709076CF1CB5A1F4009A3101 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 709076CD1CB5A1F4009A3101 /* LaunchScreen.storyboard */; };
+		709076DA1CB5A1F4009A3101 /* beauTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709076D91CB5A1F4009A3101 /* beauTests.swift */; };
+		709076E51CB5A1F4009A3101 /* beauUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709076E41CB5A1F4009A3101 /* beauUITests.swift */; };
+		70F1D09C1CB5F2CE00FA0369 /* UserLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F1D09B1CB5F2CE00FA0369 /* UserLoginVC.swift */; };
+		70F1D0A51CB60FC800FA0369 /* GlobalVar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F1D0A41CB60FC800FA0369 /* GlobalVar.swift */; };
+		70F1D0A81CB705F300FA0369 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F1D0A71CB705F300FA0369 /* WelcomeVC.swift */; };
+		70F1D0AA1CB706F000FA0369 /* CollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F1D0A91CB706F000FA0369 /* CollectionVC.swift */; };
+		70F1D0AD1CB7072A00FA0369 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F1D0AC1CB7072A00FA0369 /* HomeVC.swift */; };
+		70F1D0AF1CB7079500FA0369 /* SettingTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F1D0AE1CB7079500FA0369 /* SettingTVC.swift */; };
+		70F1D0B21CB708DB00FA0369 /* ForgetPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F1D0B11CB708DB00FA0369 /* ForgetPasswordVC.swift */; };
+		70F1D0B41CB70F6300FA0369 /* RestauratCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F1D0B31CB70F6300FA0369 /* RestauratCVCell.swift */; };
+		70F1D0B61CB712B300FA0369 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F1D0B51CB712B300FA0369 /* SearchVC.swift */; };
+		70F1D0B81CB738DE00FA0369 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F1D0B71CB738DE00FA0369 /* RegisterVC.swift */; };
+		70F1D0BD1CB89E1E00FA0369 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70F1D0BB1CB89E1E00FA0369 /* Login.storyboard */; };
+		70F1D0BF1CB8AF4B00FA0369 /* UpdateInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F1D0BE1CB8AF4B00FA0369 /* UpdateInfoVC.swift */; };
+		70F1D0C11CB8B3F100FA0369 /* ImagedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F1D0C01CB8B3F100FA0369 /* ImagedVC.swift */; };
+		70F1D0E41CBE27A100FA0369 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F1D0E21CBE27A100FA0369 /* User+CoreDataProperties.swift */; };
+		70F1D0E51CBE27A100FA0369 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F1D0E31CBE27A100FA0369 /* User.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		709076D61CB5A1F4009A3101 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 709076B61CB5A1F3009A3101 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 709076BD1CB5A1F3009A3101;
+			remoteInfo = beau;
+		};
+		709076E11CB5A1F4009A3101 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 709076B61CB5A1F3009A3101 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 709076BD1CB5A1F3009A3101;
+			remoteInfo = beau;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		15BD711DC17264CDBA8E79FB /* Pods-beau.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beau.debug.xcconfig"; path = "Pods/Target Support Files/Pods-beau/Pods-beau.debug.xcconfig"; sourceTree = "<group>"; };
+		709076BE1CB5A1F3009A3101 /* beau.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beau.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		709076C11CB5A1F3009A3101 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		709076C61CB5A1F3009A3101 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		709076C91CB5A1F3009A3101 /* beau.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = beau.xcdatamodel; sourceTree = "<group>"; };
+		709076CB1CB5A1F4009A3101 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		709076CE1CB5A1F4009A3101 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		709076D01CB5A1F4009A3101 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		709076D51CB5A1F4009A3101 /* beauTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = beauTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		709076D91CB5A1F4009A3101 /* beauTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beauTests.swift; sourceTree = "<group>"; };
+		709076DB1CB5A1F4009A3101 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		709076E01CB5A1F4009A3101 /* beauUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = beauUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		709076E41CB5A1F4009A3101 /* beauUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beauUITests.swift; sourceTree = "<group>"; };
+		709076E61CB5A1F4009A3101 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70F1D09B1CB5F2CE00FA0369 /* UserLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserLoginVC.swift; path = Login/UserLoginVC.swift; sourceTree = "<group>"; };
+		70F1D0A41CB60FC800FA0369 /* GlobalVar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobalVar.swift; path = Model/GlobalVar.swift; sourceTree = "<group>"; };
+		70F1D0A71CB705F300FA0369 /* WelcomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WelcomeVC.swift; path = Login/WelcomeVC.swift; sourceTree = "<group>"; };
+		70F1D0A91CB706F000FA0369 /* CollectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionVC.swift; path = Main/CollectionVC.swift; sourceTree = "<group>"; };
+		70F1D0AC1CB7072A00FA0369 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeVC.swift; path = Main/HomeVC.swift; sourceTree = "<group>"; };
+		70F1D0AE1CB7079500FA0369 /* SettingTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingTVC.swift; path = Setting/SettingTVC.swift; sourceTree = "<group>"; };
+		70F1D0B11CB708DB00FA0369 /* ForgetPasswordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForgetPasswordVC.swift; path = Login/ForgetPasswordVC.swift; sourceTree = "<group>"; };
+		70F1D0B31CB70F6300FA0369 /* RestauratCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestauratCVCell.swift; path = Main/RestauratCVCell.swift; sourceTree = "<group>"; };
+		70F1D0B51CB712B300FA0369 /* SearchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchVC.swift; path = Main/SearchVC.swift; sourceTree = "<group>"; };
+		70F1D0B71CB738DE00FA0369 /* RegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterVC.swift; path = Login/RegisterVC.swift; sourceTree = "<group>"; };
+		70F1D0BC1CB89E1E00FA0369 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
+		70F1D0BE1CB8AF4B00FA0369 /* UpdateInfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UpdateInfoVC.swift; path = Setting/UpdateInfoVC.swift; sourceTree = "<group>"; };
+		70F1D0C01CB8B3F100FA0369 /* ImagedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImagedVC.swift; path = Login/ImagedVC.swift; sourceTree = "<group>"; };
+		70F1D0E21CBE27A100FA0369 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "User+CoreDataProperties.swift"; path = "Model/User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		70F1D0E31CBE27A100FA0369 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Model/User.swift; sourceTree = "<group>"; };
+		9DC83D040857D4008022CFC6 /* Pods_beau.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_beau.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFFAB165BF9FC7220499A4FC /* Pods-beau.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beau.release.xcconfig"; path = "Pods/Target Support Files/Pods-beau/Pods-beau.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		709076BB1CB5A1F3009A3101 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				008296789458759C62034F78 /* Pods_beau.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		709076D21CB5A1F4009A3101 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		709076DD1CB5A1F4009A3101 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33056B1003B461D3D412A381 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15BD711DC17264CDBA8E79FB /* Pods-beau.debug.xcconfig */,
+				DFFAB165BF9FC7220499A4FC /* Pods-beau.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4243345C26A2BCDD99C02EA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9DC83D040857D4008022CFC6 /* Pods_beau.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		709076B51CB5A1F3009A3101 = {
+			isa = PBXGroup;
+			children = (
+				709076C01CB5A1F3009A3101 /* beau */,
+				709076D81CB5A1F4009A3101 /* beauTests */,
+				709076E31CB5A1F4009A3101 /* beauUITests */,
+				709076BF1CB5A1F3009A3101 /* Products */,
+				33056B1003B461D3D412A381 /* Pods */,
+				4243345C26A2BCDD99C02EA9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		709076BF1CB5A1F3009A3101 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				709076BE1CB5A1F3009A3101 /* beau.app */,
+				709076D51CB5A1F4009A3101 /* beauTests.xctest */,
+				709076E01CB5A1F4009A3101 /* beauUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		709076C01CB5A1F3009A3101 /* beau */ = {
+			isa = PBXGroup;
+			children = (
+				70F1D0A61CB60FCD00FA0369 /* Model */,
+				70F1D09F1CB5FCBF00FA0369 /* Login */,
+				70F1D0AB1CB7070900FA0369 /* Main */,
+				70F1D0B01CB707AD00FA0369 /* Setting */,
+				709076CB1CB5A1F4009A3101 /* Assets.xcassets */,
+				70F1D0BB1CB89E1E00FA0369 /* Login.storyboard */,
+				709076C51CB5A1F3009A3101 /* Main.storyboard */,
+				709076CD1CB5A1F4009A3101 /* LaunchScreen.storyboard */,
+				709076C11CB5A1F3009A3101 /* AppDelegate.swift */,
+				709076D01CB5A1F4009A3101 /* Info.plist */,
+				709076C81CB5A1F3009A3101 /* beau.xcdatamodeld */,
+			);
+			path = beau;
+			sourceTree = "<group>";
+		};
+		709076D81CB5A1F4009A3101 /* beauTests */ = {
+			isa = PBXGroup;
+			children = (
+				709076D91CB5A1F4009A3101 /* beauTests.swift */,
+				709076DB1CB5A1F4009A3101 /* Info.plist */,
+			);
+			path = beauTests;
+			sourceTree = "<group>";
+		};
+		709076E31CB5A1F4009A3101 /* beauUITests */ = {
+			isa = PBXGroup;
+			children = (
+				709076E41CB5A1F4009A3101 /* beauUITests.swift */,
+				709076E61CB5A1F4009A3101 /* Info.plist */,
+			);
+			path = beauUITests;
+			sourceTree = "<group>";
+		};
+		70F1D09F1CB5FCBF00FA0369 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				70F1D0C01CB8B3F100FA0369 /* ImagedVC.swift */,
+				70F1D0A71CB705F300FA0369 /* WelcomeVC.swift */,
+				70F1D09B1CB5F2CE00FA0369 /* UserLoginVC.swift */,
+				70F1D0B71CB738DE00FA0369 /* RegisterVC.swift */,
+				70F1D0B11CB708DB00FA0369 /* ForgetPasswordVC.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		70F1D0A61CB60FCD00FA0369 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				70F1D0E21CBE27A100FA0369 /* User+CoreDataProperties.swift */,
+				70F1D0E31CBE27A100FA0369 /* User.swift */,
+				70F1D0A41CB60FC800FA0369 /* GlobalVar.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		70F1D0AB1CB7070900FA0369 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				70F1D0AC1CB7072A00FA0369 /* HomeVC.swift */,
+				70F1D0A91CB706F000FA0369 /* CollectionVC.swift */,
+				70F1D0B31CB70F6300FA0369 /* RestauratCVCell.swift */,
+				70F1D0B51CB712B300FA0369 /* SearchVC.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		70F1D0B01CB707AD00FA0369 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				70F1D0AE1CB7079500FA0369 /* SettingTVC.swift */,
+				70F1D0BE1CB8AF4B00FA0369 /* UpdateInfoVC.swift */,
+			);
+			name = Setting;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		709076BD1CB5A1F3009A3101 /* beau */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 709076E91CB5A1F4009A3101 /* Build configuration list for PBXNativeTarget "beau" */;
+			buildPhases = (
+				35A30382ABC70A5682E02B25 /* Check Pods Manifest.lock */,
+				709076BA1CB5A1F3009A3101 /* Sources */,
+				709076BB1CB5A1F3009A3101 /* Frameworks */,
+				709076BC1CB5A1F3009A3101 /* Resources */,
+				FEA0DADBFA87168578961BF6 /* Embed Pods Frameworks */,
+				BA12210BA4FF76A1D120324E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = beau;
+			productName = beau;
+			productReference = 709076BE1CB5A1F3009A3101 /* beau.app */;
+			productType = "com.apple.product-type.application";
+		};
+		709076D41CB5A1F4009A3101 /* beauTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 709076EC1CB5A1F4009A3101 /* Build configuration list for PBXNativeTarget "beauTests" */;
+			buildPhases = (
+				709076D11CB5A1F4009A3101 /* Sources */,
+				709076D21CB5A1F4009A3101 /* Frameworks */,
+				709076D31CB5A1F4009A3101 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				709076D71CB5A1F4009A3101 /* PBXTargetDependency */,
+			);
+			name = beauTests;
+			productName = beauTests;
+			productReference = 709076D51CB5A1F4009A3101 /* beauTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		709076DF1CB5A1F4009A3101 /* beauUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 709076EF1CB5A1F4009A3101 /* Build configuration list for PBXNativeTarget "beauUITests" */;
+			buildPhases = (
+				709076DC1CB5A1F4009A3101 /* Sources */,
+				709076DD1CB5A1F4009A3101 /* Frameworks */,
+				709076DE1CB5A1F4009A3101 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				709076E21CB5A1F4009A3101 /* PBXTargetDependency */,
+			);
+			name = beauUITests;
+			productName = beauUITests;
+			productReference = 709076E01CB5A1F4009A3101 /* beauUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		709076B61CB5A1F3009A3101 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = UDECE;
+				TargetAttributes = {
+					709076BD1CB5A1F3009A3101 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = VS7LM5WTUA;
+					};
+					709076D41CB5A1F4009A3101 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 709076BD1CB5A1F3009A3101;
+					};
+					709076DF1CB5A1F4009A3101 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 709076BD1CB5A1F3009A3101;
+					};
+				};
+			};
+			buildConfigurationList = 709076B91CB5A1F3009A3101 /* Build configuration list for PBXProject "beau" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 709076B51CB5A1F3009A3101;
+			productRefGroup = 709076BF1CB5A1F3009A3101 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				709076BD1CB5A1F3009A3101 /* beau */,
+				709076D41CB5A1F4009A3101 /* beauTests */,
+				709076DF1CB5A1F4009A3101 /* beauUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		709076BC1CB5A1F3009A3101 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				709076CF1CB5A1F4009A3101 /* LaunchScreen.storyboard in Resources */,
+				70F1D0BD1CB89E1E00FA0369 /* Login.storyboard in Resources */,
+				709076CC1CB5A1F4009A3101 /* Assets.xcassets in Resources */,
+				709076C71CB5A1F3009A3101 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		709076D31CB5A1F4009A3101 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		709076DE1CB5A1F4009A3101 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35A30382ABC70A5682E02B25 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BA12210BA4FF76A1D120324E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-beau/Pods-beau-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEA0DADBFA87168578961BF6 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-beau/Pods-beau-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		709076BA1CB5A1F3009A3101 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70F1D0BF1CB8AF4B00FA0369 /* UpdateInfoVC.swift in Sources */,
+				70F1D0C11CB8B3F100FA0369 /* ImagedVC.swift in Sources */,
+				70F1D09C1CB5F2CE00FA0369 /* UserLoginVC.swift in Sources */,
+				70F1D0B61CB712B300FA0369 /* SearchVC.swift in Sources */,
+				70F1D0E51CBE27A100FA0369 /* User.swift in Sources */,
+				70F1D0B21CB708DB00FA0369 /* ForgetPasswordVC.swift in Sources */,
+				70F1D0B41CB70F6300FA0369 /* RestauratCVCell.swift in Sources */,
+				70F1D0AF1CB7079500FA0369 /* SettingTVC.swift in Sources */,
+				70F1D0AD1CB7072A00FA0369 /* HomeVC.swift in Sources */,
+				70F1D0E41CBE27A100FA0369 /* User+CoreDataProperties.swift in Sources */,
+				70F1D0A81CB705F300FA0369 /* WelcomeVC.swift in Sources */,
+				709076CA1CB5A1F3009A3101 /* beau.xcdatamodeld in Sources */,
+				70F1D0AA1CB706F000FA0369 /* CollectionVC.swift in Sources */,
+				70F1D0B81CB738DE00FA0369 /* RegisterVC.swift in Sources */,
+				70F1D0A51CB60FC800FA0369 /* GlobalVar.swift in Sources */,
+				709076C21CB5A1F3009A3101 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		709076D11CB5A1F4009A3101 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				709076DA1CB5A1F4009A3101 /* beauTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		709076DC1CB5A1F4009A3101 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				709076E51CB5A1F4009A3101 /* beauUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		709076D71CB5A1F4009A3101 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 709076BD1CB5A1F3009A3101 /* beau */;
+			targetProxy = 709076D61CB5A1F4009A3101 /* PBXContainerItemProxy */;
+		};
+		709076E21CB5A1F4009A3101 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 709076BD1CB5A1F3009A3101 /* beau */;
+			targetProxy = 709076E11CB5A1F4009A3101 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		709076C51CB5A1F3009A3101 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				709076C61CB5A1F3009A3101 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		709076CD1CB5A1F4009A3101 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				709076CE1CB5A1F4009A3101 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		70F1D0BB1CB89E1E00FA0369 /* Login.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70F1D0BC1CB89E1E00FA0369 /* Base */,
+			);
+			name = Login.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		709076E71CB5A1F4009A3101 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		709076E81CB5A1F4009A3101 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		709076EA1CB5A1F4009A3101 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15BD711DC17264CDBA8E79FB /* Pods-beau.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = beau/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.UDECE2014.beau;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		709076EB1CB5A1F4009A3101 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFFAB165BF9FC7220499A4FC /* Pods-beau.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = beau/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.UDECE2014.beau;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		709076ED1CB5A1F4009A3101 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = beauTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.UDECE.beauTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/beau.app/beau";
+			};
+			name = Debug;
+		};
+		709076EE1CB5A1F4009A3101 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = beauTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.UDECE.beauTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/beau.app/beau";
+			};
+			name = Release;
+		};
+		709076F01CB5A1F4009A3101 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = beauUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.UDECE.beauUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = beau;
+			};
+			name = Debug;
+		};
+		709076F11CB5A1F4009A3101 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = beauUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.UDECE.beauUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = beau;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		709076B91CB5A1F3009A3101 /* Build configuration list for PBXProject "beau" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				709076E71CB5A1F4009A3101 /* Debug */,
+				709076E81CB5A1F4009A3101 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		709076E91CB5A1F4009A3101 /* Build configuration list for PBXNativeTarget "beau" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				709076EA1CB5A1F4009A3101 /* Debug */,
+				709076EB1CB5A1F4009A3101 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		709076EC1CB5A1F4009A3101 /* Build configuration list for PBXNativeTarget "beauTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				709076ED1CB5A1F4009A3101 /* Debug */,
+				709076EE1CB5A1F4009A3101 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		709076EF1CB5A1F4009A3101 /* Build configuration list for PBXNativeTarget "beauUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				709076F01CB5A1F4009A3101 /* Debug */,
+				709076F11CB5A1F4009A3101 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		709076C81CB5A1F3009A3101 /* beau.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				709076C91CB5A1F3009A3101 /* beau.xcdatamodel */,
+			);
+			currentVersion = 709076C91CB5A1F3009A3101 /* beau.xcdatamodel */;
+			path = beau.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 709076B61CB5A1F3009A3101 /* Project object */;
+}
