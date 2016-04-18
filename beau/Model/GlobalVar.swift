@@ -6,11 +6,11 @@
 //  Copyright © 2016 UDECE. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 public struct GlobalVar {
-    static let apiUrl = "https://beau-remote.herokuapp.com/com.beauapp"
-    
+    static let apiUrl = "https://beau-remote.herokuapp.com"
+    static let buttonRadius = CGFloat(5)
     
     static func generatUUID() -> String {
         if let UUID = NSUserDefaults.standardUserDefaults().stringForKey("UUID") {

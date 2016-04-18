@@ -9,9 +9,12 @@
 import UIKit
 
 class WelcomeVC: ImagedVC {
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var signupButton: UIButton!
     
     override func viewDidLoad() {
-
+        loginButton.layer.cornerRadius = GlobalVar.buttonRadius
+        signupButton.layer.cornerRadius = GlobalVar.buttonRadius
         
     }
 }

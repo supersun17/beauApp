@@ -8,7 +8,7 @@ use_frameworks!
 target 'beau' do
 pod "Alamofire"
 pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
-pod "Validator"
+pod 'SwiftValidator'
 end
 
 target 'beauTests' do

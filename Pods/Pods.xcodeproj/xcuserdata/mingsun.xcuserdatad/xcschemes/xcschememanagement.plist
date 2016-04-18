@@ -14,12 +14,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>SwiftyJSON.xcscheme</key>
+		<key>SwiftValidator.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Validator.xcscheme</key>
+		<key>SwiftyJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -27,12 +27,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1ED7B0B85C9192430A063E0F4A409E7B</key>
+		<key>09FACD813144641161C73C9F2A197C18</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1FC86DE08DD367307E258397856D5B9D</key>
+		<key>124ACAC828656CA5A699CC191C0594E9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -42,7 +42,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DA35635EB83354F0198AB4CB2754A5BF</key>
+		<key>E02982894865A49FC1038D2656906ED9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

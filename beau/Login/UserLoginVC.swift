@@ -11,21 +11,59 @@ import Alamofire
 import SwiftyJSON
 import CoreData
 
-class UserLoginVC: ImagedVC {
+class UserLoginVC: ImagedVC, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var userEmailText: UITextField!
     @IBOutlet weak var userPWText: UITextField!
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var dropdownMenu: UITableView!
+    
+    var userEmailList: [String] = []
+    
     
     override func viewDidLoad() {
         userPWText.secureTextEntry = true
         
+        self.dropdownMenu.hidden = true
+        self.dropdownMenu.separatorColor = UIColor.clearColor()
+        
         let user = load()
-        if user.count != 0 {
-           userEmailText.text = user[0].valueForKey("email") as? String
+        if user.count > 1 {
+            for userData in user {
+                userEmailList.append(userData.valueForKey("email") as! String)
+                
+                dropdownMenu.reloadData()
+            }
+            userEmailText.text = userEmailList[0]
         }
+        
+        userEmailText.returnKeyType = UIReturnKeyType.Next
+        userPWText.returnKeyType = UIReturnKeyType.Send
+        userEmailText.delegate = self
+        userPWText.delegate = self
+        
+        loginButton.layer.cornerRadius = GlobalVar.buttonRadius
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return userEmailList.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("dropdownTVCell", forIndexPath: indexPath)
+        cell.textLabel!.text = userEmailList[indexPath.row]
+        tableView.rowHeight = 21
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        userEmailText.text = userEmailList[indexPath.row]
+        self.dropdownMenu.hidden = true
     }
     
     @IBAction func loginButtonPressed(sender: UIButton) {
+        loadingIndicator.startAnimating()
         let url = "\(GlobalVar.apiUrl)/login"
         let parameters: Dictionary <String, String>? = [
             "email": userEmailText.text!,
@@ -41,13 +79,44 @@ class UserLoginVC: ImagedVC {
                 if json == "success" {
                     print("success")
                     self.save(self.userEmailText.text!)
+                    self.loadingIndicator.stopAnimating()
                     self.performSegueWithIdentifier("LoginSuccessSegue", sender: self)
                 }
                 
             case .Failure(let error):
                 print("Request failed with error: \(error)")
+                self.loadingIndicator.stopAnimating()
                 }
         }
+    }
+    
+    func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
+        if textField == userEmailText {
+            self.dropdownMenu.hidden = false
+        }
+        return true
+    }
+    
+    func textFieldDidEndEditing(textField: UITextField) {
+        if textField == userEmailText {
+            self.dropdownMenu.hidden = true
+        }
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        if textField == userEmailText {
+            textField.resignFirstResponder()
+            userPWText.becomeFirstResponder()
+        }
+        if textField == userPWText {
+            textField.resignFirstResponder()
+            loginButton.sendActionsForControlEvents(UIControlEvents.TouchUpInside)
+        }
+        return true
+    }
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
     func save(email: String) {

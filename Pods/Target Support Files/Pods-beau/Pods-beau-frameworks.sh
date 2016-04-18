@@ -85,11 +85,11 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-beau/Alamofire.framework"
+  install_framework "Pods-beau/SwiftValidator.framework"
   install_framework "Pods-beau/SwiftyJSON.framework"
-  install_framework "Pods-beau/Validator.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-beau/Alamofire.framework"
+  install_framework "Pods-beau/SwiftValidator.framework"
   install_framework "Pods-beau/SwiftyJSON.framework"
-  install_framework "Pods-beau/Validator.framework"
 fi
