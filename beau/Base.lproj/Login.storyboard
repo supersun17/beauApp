@@ -448,8 +448,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="psO-sW-CjC"/>
+        <segue reference="GwV-XA-eR9"/>
         <segue reference="tfe-Oi-jvL"/>
-        <segue reference="Y7d-M4-erF"/>
-        <segue reference="TXZ-Zs-Fy3"/>
     </inferredMetricsTieBreakers>
 </document>

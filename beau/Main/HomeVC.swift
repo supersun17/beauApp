@@ -21,7 +21,7 @@ class HomeVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.statusWindowView.backgroundColor = UIColor(patternImage: UIImage(named: "Wavy_lines.png")!)
         
         initCollectionVC()
     }

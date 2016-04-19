@@ -10,6 +10,8 @@ import UIKit
 
 class UpdateInfoVC: UIViewController {
     
-    
+    @IBAction func backButtonPressed(sender: AnyObject) {
+        self.dismissViewControllerAnimated(false, completion: nil)
+    }
     
 }

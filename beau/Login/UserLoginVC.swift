@@ -29,13 +29,15 @@ class UserLoginVC: ImagedVC, UITextFieldDelegate, UITableViewDelegate, UITableVi
         self.dropdownMenu.separatorColor = UIColor.clearColor()
         
         let user = load()
+        
         if user.count > 1 {
             for userData in user {
                 userEmailList.append(userData.valueForKey("email") as! String)
                 
                 dropdownMenu.reloadData()
             }
-            userEmailText.text = userEmailList[0]
+            let lastUserIndex = userEmailList.count - 1
+            userEmailText.text = userEmailList[lastUserIndex]
         }
         
         userEmailText.returnKeyType = UIReturnKeyType.Next

@@ -46,10 +46,10 @@ class RegisterVC: ImagedVC, UITextFieldDelegate, ValidationDelegate {
         userPassword.delegate = self
         userPasswordConfirm.delegate = self
         
-        validator.registerField(userEmailText, errorLabel: emailErrorLabel, rules: [RequiredRule(), EmailRule(message: "Invalid Email format ↓")])
-        validator.registerField(userNameText, errorLabel: nameErrorLabel, rules: [RequiredRule(), FullNameRule(message:"FirstName LatstName ↓")])
-        validator.registerField(userPassword, errorLabel: passwordErrorLabel, rules: [RequiredRule(), PasswordRule(message:"Must be 8 characters with 1 uppercase ↓")])
-        validator.registerField(userPasswordConfirm, errorLabel: pwdConfirmErrorLabel, rules: [ConfirmationRule(confirmField :userPassword, message:"Incompatible password ↓")])
+        validator.registerField(userEmailText, errorLabel: emailErrorLabel, rules: [RequiredRule(), EmailRule(message: "Invalid Email format")])
+        validator.registerField(userNameText, errorLabel: nameErrorLabel, rules: [RequiredRule(), FullNameRule(message:"First name Last name")])
+        validator.registerField(userPassword, errorLabel: passwordErrorLabel, rules: [RequiredRule(), PasswordRule(message:"Must be 8 characters with 1 uppercase")])
+        validator.registerField(userPasswordConfirm, errorLabel: pwdConfirmErrorLabel, rules: [ConfirmationRule(confirmField :userPassword, message:"Incompatible password")])
         
         submitButton.layer.cornerRadius = GlobalVar.buttonRadius
         
@@ -150,6 +150,11 @@ class RegisterVC: ImagedVC, UITextFieldDelegate, ValidationDelegate {
     
     func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
         switch(textField) {
+        case userEmailText:
+            let shift = userEmailText.frame.maxY - textField.frame.maxY
+            UIView.animateWithDuration(0.4, animations: { () -> Void in
+                self.view.transform = CGAffineTransformMakeTranslation(0, shift)
+            })
         case userNameText:
             let shift = userEmailText.frame.maxY - textField.frame.maxY
             UIView.animateWithDuration(0.4, animations: { () -> Void in

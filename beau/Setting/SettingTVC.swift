@@ -11,5 +11,22 @@ import UIKit
 class SettingTVC: UITableViewController {
     
     var homeVC: HomeVC?
+    
+    override func viewDidLoad() {
+        
+        
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        switch(indexPath.row) {
+            case 0:
+                self.dismissViewControllerAnimated(false, completion: nil)
+            case 1:
+                self.performSegueWithIdentifier("UpdateInfoSegue", sender: self)
+            default:
+                break
+        
+        }
+    }
 
 }
