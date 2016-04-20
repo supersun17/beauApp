@@ -461,6 +461,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="nWk-a2-ccc" firstAttribute="top" secondItem="Ial-qB-zfN" secondAttribute="bottom" constant="16" id="07L-dV-S2C"/>
                             <constraint firstItem="a8d-GD-xLk" firstAttribute="top" secondItem="XED-fy-ec2" secondAttribute="bottom" constant="8" id="0Ni-FU-KD9"/>
                             <constraint firstItem="Ks8-Et-wdb" firstAttribute="top" secondItem="elu-87-HCg" secondAttribute="bottom" constant="20" id="3Dx-g1-Q0L"/>
                             <constraint firstItem="EMv-EK-lQD" firstAttribute="centerX" secondItem="UOC-6j-O7K" secondAttribute="centerX" id="8Pj-uM-dXd"/>
@@ -468,7 +469,6 @@
                             <constraint firstItem="PhU-xk-mDA" firstAttribute="width" secondItem="nnI-v2-FMg" secondAttribute="width" id="94H-QL-kvi"/>
                             <constraint firstItem="Ks8-Et-wdb" firstAttribute="top" secondItem="EMv-EK-lQD" secondAttribute="bottom" constant="58" id="AZZ-cQ-79Q"/>
                             <constraint firstItem="Ial-qB-zfN" firstAttribute="centerX" secondItem="O8B-Kr-L6p" secondAttribute="centerX" id="Df4-yl-dFK"/>
-                            <constraint firstItem="b6R-Bq-7ig" firstAttribute="top" secondItem="jq5-Nf-tBC" secondAttribute="bottom" constant="56" id="Fi6-Va-12O"/>
                             <constraint firstItem="PhU-xk-mDA" firstAttribute="top" secondItem="a8d-GD-xLk" secondAttribute="bottom" constant="8" id="Iay-vM-GHU"/>
                             <constraint firstItem="PhU-xk-mDA" firstAttribute="centerX" secondItem="nnI-v2-FMg" secondAttribute="centerX" id="Iye-JL-7Hz"/>
                             <constraint firstItem="LtL-cf-uIv" firstAttribute="centerX" secondItem="mfa-gG-U8M" secondAttribute="centerX" id="WIf-qv-zFy"/>
@@ -482,6 +482,7 @@
                             <constraint firstItem="mfa-gG-U8M" firstAttribute="centerX" secondItem="nnI-v2-FMg" secondAttribute="centerX" id="hNY-Yh-bDa"/>
                             <constraint firstItem="mfa-gG-U8M" firstAttribute="top" secondItem="nnI-v2-FMg" secondAttribute="bottom" constant="8" id="iRC-R7-NCD"/>
                             <constraint firstItem="XED-fy-ec2" firstAttribute="top" secondItem="b6R-Bq-7ig" secondAttribute="bottom" constant="35" id="ipF-2U-w54"/>
+                            <constraint firstItem="b6R-Bq-7ig" firstAttribute="top" secondItem="UOC-6j-O7K" secondAttribute="topMargin" constant="76" id="j7X-61-h7r"/>
                             <constraint firstItem="Ial-qB-zfN" firstAttribute="top" secondItem="O8B-Kr-L6p" secondAttribute="bottom" constant="8" id="kw4-5I-zO7"/>
                             <constraint firstItem="nnI-v2-FMg" firstAttribute="centerX" secondItem="PhU-xk-mDA" secondAttribute="centerX" id="mLa-bO-gGd"/>
                             <constraint firstAttribute="leadingMargin" secondItem="elu-87-HCg" secondAttribute="leading" id="oYi-en-042"/>
@@ -497,6 +498,7 @@
                                 <exclude reference="94H-QL-kvi"/>
                                 <exclude reference="Iye-JL-7Hz"/>
                                 <exclude reference="8xd-jY-vzP"/>
+                                <exclude reference="07L-dV-S2C"/>
                             </mask>
                         </variation>
                     </view>
