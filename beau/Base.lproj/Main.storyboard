@@ -306,10 +306,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4IO-uE-Pi1" customClass="beauRoundCornerView" customModule="beau" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="31" width="280" height="529"/>
+                                        <rect key="frame" x="20" y="40" width="280" height="520"/>
                                         <subviews>
                                             <tableView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cVk-oz-3qh">
-                                                <rect key="frame" x="0.0" y="44" width="280" height="485"/>
+                                                <rect key="frame" x="0.0" y="44" width="280" height="476"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <prototypes>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="RestaurantTVCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="RestaurantTVCell" textLabel="Ywb-Kx-vD9" style="IBUITableViewCellStyleDefault" id="h11-pJ-vDM" customClass="RestaurantTVCell" customModule="beau" customModuleProvider="target">
@@ -360,7 +360,7 @@
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1xb-6z-fc5">
-                                        <rect key="frame" x="0.0" y="11" width="40" height="40"/>
+                                        <rect key="frame" x="0.0" y="20" width="40" height="40"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="40" id="OBp-vh-fq3"/>
@@ -380,8 +380,8 @@
                                     <constraint firstAttribute="trailing" secondItem="4IO-uE-Pi1" secondAttribute="trailing" constant="20" id="Cfq-tK-ybb"/>
                                     <constraint firstItem="1xb-6z-fc5" firstAttribute="leading" secondItem="fDA-fQ-8ix" secondAttribute="leading" id="GUq-fS-VVe"/>
                                     <constraint firstAttribute="bottom" secondItem="4IO-uE-Pi1" secondAttribute="bottom" constant="8" id="PIn-4Y-79b"/>
-                                    <constraint firstItem="1xb-6z-fc5" firstAttribute="top" secondItem="fDA-fQ-8ix" secondAttribute="top" constant="11" id="PQn-f0-54d"/>
-                                    <constraint firstItem="4IO-uE-Pi1" firstAttribute="top" secondItem="fDA-fQ-8ix" secondAttribute="top" constant="31" id="phu-hp-r0q"/>
+                                    <constraint firstItem="1xb-6z-fc5" firstAttribute="top" secondItem="fDA-fQ-8ix" secondAttribute="top" constant="20" id="PQn-f0-54d"/>
+                                    <constraint firstItem="4IO-uE-Pi1" firstAttribute="top" secondItem="fDA-fQ-8ix" secondAttribute="top" constant="40" id="phu-hp-r0q"/>
                                     <constraint firstItem="4IO-uE-Pi1" firstAttribute="leading" secondItem="fDA-fQ-8ix" secondAttribute="leading" constant="20" id="zMM-xH-7xJ"/>
                                 </constraints>
                             </view>
