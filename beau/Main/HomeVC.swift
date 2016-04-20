@@ -9,7 +9,7 @@
 import UIKit
 
 
-class HomeVC: UIViewController {
+class HomeVC: ImagedVC {
     
     var collectionVC: CollectionVC?
     var settingTVC: SettingTVC?
@@ -71,9 +71,7 @@ class HomeVC: UIViewController {
     }
     
     @IBAction func settingButtonPressed(sender: UIButton) {
-        
         toggleSettingVC()
-        
     }
 
     

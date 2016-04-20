@@ -11,5 +11,9 @@ import UIKit
 class ForgetPasswordVC: ImagedVC {
     
     
+    @IBAction func backButtonPressed(sender: UIButton) {
+        self.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
     
 }

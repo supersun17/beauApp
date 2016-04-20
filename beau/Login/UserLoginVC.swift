@@ -121,6 +121,11 @@ class UserLoginVC: ImagedVC, UITextFieldDelegate, UITableViewDelegate, UITableVi
         self.view.endEditing(true)
     }
     
+    @IBAction func backButtonPressed(sender: UIButton) {
+        self.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     func save(email: String) {
         let managedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
         let entityDescription = NSEntityDescription.entityForName("User", inManagedObjectContext: managedObjectContext)

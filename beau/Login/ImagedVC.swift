@@ -24,10 +24,6 @@ class ImagedVC: UIViewController {
         )
         self.view.addSubview(backGroundImgView)
         self.view.sendSubviewToBack(backGroundImgView)
-        
-
-        //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "white_ink.png")!)
-        //self.view.contentMode = UIViewContentMode.ScaleAspectFill
     }
     
 }

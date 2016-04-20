@@ -20,9 +20,9 @@ class SettingTVC: UITableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         switch(indexPath.row) {
             
-            case 1:
+            case 3:
                 self.performSegueWithIdentifier("UpdateInfoSegue", sender: self)
-            case 4:
+            case 5:
                 self.dismissViewControllerAnimated(false, completion: nil)
             default:
                 break

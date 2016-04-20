@@ -8,10 +8,11 @@
 
 import UIKit
 
-class UpdateInfoVC: UIViewController {
+class UpdateInfoVC: ImagedVC {
     
     @IBAction func backButtonPressed(sender: AnyObject) {
-        self.dismissViewControllerAnimated(false, completion: nil)
+        self.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
 }
