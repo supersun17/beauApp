@@ -83,6 +83,12 @@ class UserLoginVC: ImagedVC, UITextFieldDelegate, UITableViewDelegate, UITableVi
                     self.save(self.userEmailText.text!)
                     self.loadingIndicator.stopAnimating()
                     self.performSegueWithIdentifier("LoginSuccessSegue", sender: self)
+                } else if json == "Please enter password" {
+                    self.popAlert("Please enter password")
+                    self.loadingIndicator.stopAnimating()
+                } else if json == "error" {
+                    self.popAlert("Invalid password")
+                    self.loadingIndicator.stopAnimating()
                 }
                 
             case .Failure(let error):
@@ -119,6 +125,13 @@ class UserLoginVC: ImagedVC, UITextFieldDelegate, UITableViewDelegate, UITableVi
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         self.view.endEditing(true)
+    }
+    
+    func popAlert(info: String) {
+        let alert = UIAlertController(title: info, message: nil, preferredStyle: .Alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .Default, handler:nil))
+        self.presentViewController(alert, animated: true, completion: nil)
+        
     }
     
     @IBAction func backButtonPressed(sender: UIButton) {

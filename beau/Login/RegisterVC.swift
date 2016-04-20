@@ -99,6 +99,9 @@ class RegisterVC: ImagedVC, UITextFieldDelegate, ValidationDelegate {
                     self.save(self.userEmailText.text!)
                     self.performSegueWithIdentifier("RegSuccessSegue", sender: self)
                     self.loadingIndicator.stopAnimating()
+                } else if json == "The email has been registered" {
+                    self.popAlert("This email has been registered")
+                    self.loadingIndicator.stopAnimating()
                 }
                 
             case .Failure(let error):
@@ -174,6 +177,13 @@ class RegisterVC: ImagedVC, UITextFieldDelegate, ValidationDelegate {
             break
         }
         return true
+    }
+    
+    func popAlert(info: String) {
+        let alert = UIAlertController(title: info, message: nil, preferredStyle: .Alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .Default, handler:nil))
+        self.presentViewController(alert, animated: true, completion: nil)
+        
     }
     
     @IBAction func backButtonPressed(sender: UIButton) {
