@@ -14,30 +14,52 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="beau!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6FX-KT-fVe">
-                                <rect key="frame" x="205" y="233" width="191" height="133"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launching" translatesAutoresizingMaskIntoConstraints="NO" id="MRA-FF-4At">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to beau!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4O-ck-ZBY">
+                                <rect key="frame" x="14" y="62" width="292" height="177"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="191" id="cOj-4O-iXI"/>
+                                    <constraint firstAttribute="height" constant="177" id="2ZO-dm-Xqb"/>
+                                    <constraint firstAttribute="width" constant="292" id="7k6-T4-90T"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="40"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="50"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="6FX-KT-fVe" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="213" id="6Pd-PR-Uaj"/>
-                            <constraint firstItem="6FX-KT-fVe" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="kEw-fd-7hp"/>
-                            <constraint firstItem="6FX-KT-fVe" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="taY-Z6-fxp"/>
+                            <constraint firstItem="MRA-FF-4At" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="2NW-hL-rK8"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="MRA-FF-4At" secondAttribute="bottom" id="7mr-m2-AeL"/>
+                            <constraint firstItem="MRA-FF-4At" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="ARQ-PV-cRX"/>
+                            <constraint firstItem="MRA-FF-4At" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="ClD-fB-dee"/>
+                            <constraint firstItem="MRA-FF-4At" firstAttribute="top" secondItem="E4O-ck-ZBY" secondAttribute="bottom" constant="-266" id="Ftw-69-acR"/>
+                            <constraint firstItem="MRA-FF-4At" firstAttribute="top" secondItem="E4O-ck-ZBY" secondAttribute="top" constant="-62" id="K2k-Ll-x2N"/>
+                            <constraint firstItem="E4O-ck-ZBY" firstAttribute="leading" secondItem="MRA-FF-4At" secondAttribute="leading" id="RRp-Fh-ZMT"/>
+                            <constraint firstItem="E4O-ck-ZBY" firstAttribute="leading" secondItem="MRA-FF-4At" secondAttribute="trailing" constant="-580" id="Uyt-oo-vNR"/>
+                            <constraint firstItem="E4O-ck-ZBY" firstAttribute="centerX" secondItem="MRA-FF-4At" secondAttribute="centerX" id="VNf-39-fEx"/>
+                            <constraint firstAttribute="trailing" secondItem="MRA-FF-4At" secondAttribute="trailing" id="hyF-hb-SDl"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ARQ-PV-cRX"/>
+                                <exclude reference="Ftw-69-acR"/>
+                                <exclude reference="RRp-Fh-ZMT"/>
+                                <exclude reference="Uyt-oo-vNR"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="launching" width="542" height="960"/>
+    </resources>
 </document>

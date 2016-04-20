@@ -10,8 +10,24 @@ import UIKit
 
 class ImagedVC: UIViewController {
     
+    var backGroundImgView = UIImageView()
     override func viewWillAppear(animated: Bool) {
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Welcome.png")!)
+        
+        backGroundImgView.image = UIImage(named: "white_ink")
+        backGroundImgView.contentMode = UIViewContentMode.ScaleAspectFill
+        
+        backGroundImgView.frame = CGRectMake(
+            0,
+            0,
+            self.view.frame.size.width,
+            self.view.frame.size.height
+        )
+        self.view.addSubview(backGroundImgView)
+        self.view.sendSubviewToBack(backGroundImgView)
+        
+
+        //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "white_ink.png")!)
+        //self.view.contentMode = UIViewContentMode.ScaleAspectFill
     }
     
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9ep-oC-CkG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zaW-Lm-k6B">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -30,7 +30,7 @@
                                     </segue>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="welcome to beau!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LC4-UL-eFz">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="welcome to beau!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LC4-UL-eFz">
                                 <rect key="frame" x="20" y="76" width="280" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="JUt-S2-KJq"/>
@@ -65,6 +65,7 @@
                             <constraint firstItem="LC4-UL-eFz" firstAttribute="trailing" secondItem="5tc-XR-Opg" secondAttribute="trailing" id="zsv-Xf-cgb"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Kug-Gx-p80"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="loginButton" destination="5tc-XR-Opg" id="Ce3-TP-uyc"/>
@@ -73,7 +74,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jm5-VN-bNJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-665" y="353"/>
+            <point key="canvasLocation" x="-133" y="353"/>
         </scene>
         <!--User LoginVC-->
         <scene sceneID="9Qe-jt-KHJ">
@@ -135,7 +136,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="9ep-oC-CkG" kind="show" id="Y7d-M4-erF">
+                                    <segue destination="zaW-Lm-k6B" kind="show" id="Y7d-M4-erF">
                                         <nil key="action"/>
                                     </segue>
                                 </connections>
@@ -221,7 +222,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A8c-gB-dUd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-269" y="353"/>
+            <point key="canvasLocation" x="263" y="353"/>
         </scene>
         <!--Forget PasswordVC-->
         <scene sceneID="14V-oV-DDC">
@@ -290,7 +291,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UeY-8i-WKD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="127" y="353"/>
+            <point key="canvasLocation" x="659" y="353"/>
         </scene>
         <!--Main-->
         <scene sceneID="Vmz-cZ-YnN">
@@ -298,7 +299,7 @@
                 <viewControllerPlaceholder storyboardName="Main" id="Q3D-As-b6g" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XQN-KZ-GQq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-269" y="1629"/>
+            <point key="canvasLocation" x="288" y="1087"/>
         </scene>
         <!--RegisterVC-->
         <scene sceneID="WHP-Cd-vbj">
@@ -321,7 +322,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="9ep-oC-CkG" kind="show" id="GwV-XA-eR9">
+                                    <segue destination="zaW-Lm-k6B" kind="show" id="GwV-XA-eR9">
                                         <nil key="action"/>
                                     </segue>
                                 </connections>
@@ -444,12 +445,30 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DBq-Of-hYc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-665" y="1045"/>
+            <point key="canvasLocation" x="-133" y="1061"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JLd-ML-2eG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zaW-Lm-k6B" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9Hh-sD-Y0c">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9ep-oC-CkG" kind="relationship" relationship="rootViewController" id="d8g-iS-4wm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="akG-C0-Sjq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-572" y="353"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="psO-sW-CjC"/>
-        <segue reference="GwV-XA-eR9"/>
-        <segue reference="tfe-Oi-jvL"/>
+        <segue reference="TXZ-Zs-Fy3"/>
+        <segue reference="Kab-gc-AQr"/>
+        <segue reference="Y7d-M4-erF"/>
     </inferredMetricsTieBreakers>
 </document>
