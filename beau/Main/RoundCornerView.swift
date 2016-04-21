@@ -8,7 +8,7 @@
 
 import UIKit
 
-class beauRoundCornerView: UIView {
+class RoundCornerView: UIView {
     
     override func drawRect(rect: CGRect) {
         self.layer.cornerRadius = 6

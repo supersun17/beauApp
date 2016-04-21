@@ -197,7 +197,7 @@ class RegisterVC: ImagedVC, UITextFieldDelegate, ValidationDelegate {
         let entityDescription = NSEntityDescription.entityForName("User", inManagedObjectContext: managedObjectContext)
         let user = User(entity: entityDescription!, insertIntoManagedObjectContext: managedObjectContext)
         
-        user.email = email
+        user.userEmail = email
         
         do {
             try managedObjectContext.save()

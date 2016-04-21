@@ -52,7 +52,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Hfh-Km-MsZ" kind="presentation" modalTransitionStyle="crossDissolve" id="Kab-gc-AQr"/>
+                                    <segue destination="Hfh-Km-MsZ" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Kab-gc-AQr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -126,7 +126,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="e0Z-By-5Nc" kind="presentation" modalTransitionStyle="crossDissolve" id="woH-JL-OwS"/>
+                                    <segue destination="e0Z-By-5Nc" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="woH-JL-OwS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ry-lh-Foc">
@@ -241,7 +241,7 @@
                         <outlet property="loginButton" destination="1ry-lh-Foc" id="QH3-tS-ddL"/>
                         <outlet property="userEmailText" destination="JCg-z1-EB2" id="NUe-5W-dAC"/>
                         <outlet property="userPWText" destination="fAh-y6-N5j" id="HLp-Tb-pMW"/>
-                        <segue destination="Q3D-As-b6g" kind="presentation" identifier="LoginSuccessSegue" id="TXZ-Zs-Fy3"/>
+                        <segue destination="Q3D-As-b6g" kind="presentation" identifier="LoginSuccessSegue" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="TXZ-Zs-Fy3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A8c-gB-dUd" sceneMemberID="firstResponder"/>
@@ -514,7 +514,7 @@
                         <outlet property="userNameText" destination="nnI-v2-FMg" id="LXu-o7-x6o"/>
                         <outlet property="userPassword" destination="LtL-cf-uIv" id="Kaa-zt-sDb"/>
                         <outlet property="userPasswordConfirm" destination="Ial-qB-zfN" id="Vpr-FY-EPB"/>
-                        <segue destination="Q3D-As-b6g" kind="presentation" identifier="RegSuccessSegue" id="psO-sW-CjC"/>
+                        <segue destination="Q3D-As-b6g" kind="presentation" identifier="RegSuccessSegue" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="psO-sW-CjC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DBq-Of-hYc" userLabel="First Responder" sceneMemberID="firstResponder"/>

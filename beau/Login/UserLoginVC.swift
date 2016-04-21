@@ -32,7 +32,7 @@ class UserLoginVC: ImagedVC, UITextFieldDelegate, UITableViewDelegate, UITableVi
         
         if user.count > 1 {
             for userData in user {
-                userEmailList.append(userData.valueForKey("email") as! String)
+                userEmailList.append(userData.valueForKey("userEmail") as! String)
                 
                 dropdownMenu.reloadData()
             }
@@ -148,7 +148,7 @@ class UserLoginVC: ImagedVC, UITextFieldDelegate, UITableViewDelegate, UITableVi
         let entityDescription = NSEntityDescription.entityForName("User", inManagedObjectContext: managedObjectContext)
         let user = User(entity: entityDescription!, insertIntoManagedObjectContext: managedObjectContext)
         
-        user.email = email
+        user.userEmail = email
         
         do {
             try managedObjectContext.save()

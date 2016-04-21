@@ -15,8 +15,6 @@ class SearchVC: UIViewController, UISearchBarDelegate, UITableViewDelegate, UITa
     @IBOutlet weak var ViewsContainerView: UIView!
     @IBOutlet weak var closeButton: UIButton!
     
-    private let reusableCell = "RestaurantTVCell"
-    
     override func viewDidLoad() {
         closeButton.layer.cornerRadius = closeButton.frame.width/2
         searchResultTV.backgroundColor = UIColor(patternImage: UIImage(named: "semi_transparent")!)
@@ -31,7 +29,7 @@ class SearchVC: UIViewController, UISearchBarDelegate, UITableViewDelegate, UITa
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(reusableCell, forIndexPath: indexPath) as! RestaurantTVCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("RestaurantTVCell", forIndexPath: indexPath) as! RestaurantTVCell
         cell.titleLabel.text = "show"
         return cell
     }

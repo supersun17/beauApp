@@ -1,10 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15E65" minimumToolsVersion="Automatic">
+    <entity name="Client" representedClassName=".Client" syncable="YES">
+        <attribute name="clientEmail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="clientName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="gotDetail" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ClientDetail" inverseName="clientEmail" inverseEntity="ClientDetail" syncable="YES"/>
+        <relationship name="gotScoreFor" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Score" inverseName="clientEmail" inverseEntity="Score" syncable="YES"/>
+    </entity>
+    <entity name="ClientDetail" representedClassName=".ClientDetail" syncable="YES">
+        <attribute name="clientIntro" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="clientProfilePic" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="clientEmail" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Client" inverseName="gotDetail" inverseEntity="Client" syncable="YES"/>
+    </entity>
+    <entity name="Score" representedClassName=".Score" syncable="YES">
+        <attribute name="score" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="clientEmail" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Client" inverseName="gotScoreFor" inverseEntity="Client" syncable="YES"/>
+        <relationship name="userEmail" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="gotScoreAt" inverseEntity="User" syncable="YES"/>
+    </entity>
     <entity name="User" representedClassName=".User" syncable="YES">
-        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userEmail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userQRCode" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="gotScoreAt" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Score" inverseName="userEmail" inverseEntity="Score" syncable="YES"/>
     </entity>
     <elements>
-        <element name="User" positionX="-63" positionY="-18" width="128" height="75"/>
+        <element name="User" positionX="448" positionY="-171" width="128" height="103"/>
+        <element name="Client" positionX="-36" positionY="-171" width="128" height="103"/>
+        <element name="Score" positionX="205" positionY="-171" width="128" height="88"/>
+        <element name="ClientDetail" positionX="-38" positionY="-0" width="128" height="88"/>
     </elements>
 </model>

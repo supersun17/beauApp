@@ -1,8 +1,8 @@
 //
-//  User+CoreDataProperties.swift
+//  ClientDetail+CoreDataProperties.swift
 //  beau
 //
-//  Created by Ming Sun on 4/13/16.
+//  Created by Ming Sun on 4/21/16.
 //  Copyright © 2016 UDECE. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -12,11 +12,10 @@
 import Foundation
 import CoreData
 
-extension User {
+extension ClientDetail {
 
-    @NSManaged var userEmail: String?
-    @NSManaged var userName: String?
-    @NSManaged var userQRCode: NSData?
-    @NSManaged var gotScoreAt: Score?
+    @NSManaged var clientProfilePic: NSDate?
+    @NSManaged var clientIntro: String?
+    @NSManaged var clientEmail: Client?
 
 }

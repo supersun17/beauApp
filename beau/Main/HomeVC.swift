@@ -12,7 +12,6 @@ import UIKit
 class HomeVC: ImagedVC {
     
     var collectionVC: CollectionVC?
-    var settingTVC: SettingTVC?
     var searchVC: SearchVC?
     @IBOutlet weak var statusWindowView: UIView!
     @IBOutlet weak var usernameLabel: UILabel!
@@ -40,38 +39,9 @@ class HomeVC: ImagedVC {
         self.collectionVC!.didMoveToParentViewController(self)
     }
     
-    func toggleSettingVC() {
-        if self.settingTVC == nil {
-            self.settingTVC = self.storyboard?.instantiateViewControllerWithIdentifier("SettingTVC") as? SettingTVC
-            
-            self.settingTVC!.view.frame = CGRectMake(
-                self.view.frame.size.width - 100,
-                self.statusWindowView!.frame.maxY,
-                100,
-                self.view.frame.size.height - self.statusWindowView!.frame.maxY - statusBarHeight
-            )
-            self.addChildViewController(self.settingTVC!)
-            self.view.addSubview(self.settingTVC!.view)
-            self.settingTVC!.didMoveToParentViewController(self)
-            self.settingTVC!.homeVC = self
-            self.settingButton.setTitle("-", forState: UIControlState.Normal)
-        } else if settingTVC!.view.frame.maxX == self.view.frame.size.width {
-            self.settingTVC!.view.transform = CGAffineTransformTranslate(self.settingTVC!.view.transform, 100, 0)
-            self.settingButton.setTitle("+", forState: UIControlState.Normal)
-        } else {
-            self.settingTVC!.view.transform = CGAffineTransformTranslate(self.settingTVC!.view.transform, -100, 0)
-            self.settingButton.setTitle("-", forState: UIControlState.Normal)
-        }
-        
-    }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    @IBAction func settingButtonPressed(sender: UIButton) {
-        toggleSettingVC()
     }
 
     

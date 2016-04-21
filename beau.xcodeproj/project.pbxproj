@@ -8,8 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		008296789458759C62034F78 /* Pods_beau.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DC83D040857D4008022CFC6 /* Pods_beau.framework */; };
-		706F2B7D1CC738CD00465B60 /* beauRoundCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706F2B7C1CC738CD00465B60 /* beauRoundCornerView.swift */; };
+		706F2B7D1CC738CD00465B60 /* RoundCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706F2B7C1CC738CD00465B60 /* RoundCornerView.swift */; };
 		706F2B7F1CC73EF900465B60 /* RestaurantTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706F2B7E1CC73EF900465B60 /* RestaurantTVCell.swift */; };
+		706F2B841CC9169300465B60 /* Score+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706F2B801CC9169300465B60 /* Score+CoreDataProperties.swift */; };
+		706F2B851CC9169300465B60 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706F2B811CC9169300465B60 /* Score.swift */; };
+		706F2B861CC9169300465B60 /* Client+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706F2B821CC9169300465B60 /* Client+CoreDataProperties.swift */; };
+		706F2B871CC9169300465B60 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706F2B831CC9169300465B60 /* Client.swift */; };
+		706F2B8A1CC918B700465B60 /* ClientDetail+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706F2B881CC918B700465B60 /* ClientDetail+CoreDataProperties.swift */; };
+		706F2B8B1CC918B700465B60 /* ClientDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706F2B891CC918B700465B60 /* ClientDetail.swift */; };
+		706F2B8D1CC91FFA00465B60 /* TouchSensetiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706F2B8C1CC91FFA00465B60 /* TouchSensetiveView.swift */; };
+		706F2B8F1CC9295B00465B60 /* SettingMenuTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706F2B8E1CC9295B00465B60 /* SettingMenuTVCell.swift */; };
 		709076C21CB5A1F3009A3101 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709076C11CB5A1F3009A3101 /* AppDelegate.swift */; };
 		709076C71CB5A1F3009A3101 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 709076C51CB5A1F3009A3101 /* Main.storyboard */; };
 		709076CA1CB5A1F3009A3101 /* beau.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 709076C81CB5A1F3009A3101 /* beau.xcdatamodeld */; };
@@ -22,7 +30,7 @@
 		70F1D0A81CB705F300FA0369 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F1D0A71CB705F300FA0369 /* WelcomeVC.swift */; };
 		70F1D0AA1CB706F000FA0369 /* CollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F1D0A91CB706F000FA0369 /* CollectionVC.swift */; };
 		70F1D0AD1CB7072A00FA0369 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F1D0AC1CB7072A00FA0369 /* HomeVC.swift */; };
-		70F1D0AF1CB7079500FA0369 /* SettingTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F1D0AE1CB7079500FA0369 /* SettingTVC.swift */; };
+		70F1D0AF1CB7079500FA0369 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F1D0AE1CB7079500FA0369 /* SettingVC.swift */; };
 		70F1D0B21CB708DB00FA0369 /* ForgetPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F1D0B11CB708DB00FA0369 /* ForgetPasswordVC.swift */; };
 		70F1D0B41CB70F6300FA0369 /* RestauratCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F1D0B31CB70F6300FA0369 /* RestauratCVCell.swift */; };
 		70F1D0B61CB712B300FA0369 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F1D0B51CB712B300FA0369 /* SearchVC.swift */; };
@@ -53,8 +61,16 @@
 
 /* Begin PBXFileReference section */
 		15BD711DC17264CDBA8E79FB /* Pods-beau.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beau.debug.xcconfig"; path = "Pods/Target Support Files/Pods-beau/Pods-beau.debug.xcconfig"; sourceTree = "<group>"; };
-		706F2B7C1CC738CD00465B60 /* beauRoundCornerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = beauRoundCornerView.swift; path = Main/beauRoundCornerView.swift; sourceTree = "<group>"; };
+		706F2B7C1CC738CD00465B60 /* RoundCornerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundCornerView.swift; path = Main/RoundCornerView.swift; sourceTree = "<group>"; };
 		706F2B7E1CC73EF900465B60 /* RestaurantTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestaurantTVCell.swift; path = Main/RestaurantTVCell.swift; sourceTree = "<group>"; };
+		706F2B801CC9169300465B60 /* Score+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Score+CoreDataProperties.swift"; path = "Model/Score+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		706F2B811CC9169300465B60 /* Score.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Score.swift; path = Model/Score.swift; sourceTree = "<group>"; };
+		706F2B821CC9169300465B60 /* Client+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Client+CoreDataProperties.swift"; path = "Model/Client+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		706F2B831CC9169300465B60 /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Client.swift; path = Model/Client.swift; sourceTree = "<group>"; };
+		706F2B881CC918B700465B60 /* ClientDetail+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ClientDetail+CoreDataProperties.swift"; path = "Model/ClientDetail+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		706F2B891CC918B700465B60 /* ClientDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClientDetail.swift; path = Model/ClientDetail.swift; sourceTree = "<group>"; };
+		706F2B8C1CC91FFA00465B60 /* TouchSensetiveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TouchSensetiveView.swift; path = Setting/TouchSensetiveView.swift; sourceTree = "<group>"; };
+		706F2B8E1CC9295B00465B60 /* SettingMenuTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingMenuTVCell.swift; path = Setting/SettingMenuTVCell.swift; sourceTree = "<group>"; };
 		709076BE1CB5A1F3009A3101 /* beau.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beau.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		709076C11CB5A1F3009A3101 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		709076C61CB5A1F3009A3101 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -73,7 +89,7 @@
 		70F1D0A71CB705F300FA0369 /* WelcomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WelcomeVC.swift; path = Login/WelcomeVC.swift; sourceTree = "<group>"; };
 		70F1D0A91CB706F000FA0369 /* CollectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionVC.swift; path = Main/CollectionVC.swift; sourceTree = "<group>"; };
 		70F1D0AC1CB7072A00FA0369 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeVC.swift; path = Main/HomeVC.swift; sourceTree = "<group>"; };
-		70F1D0AE1CB7079500FA0369 /* SettingTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingTVC.swift; path = Setting/SettingTVC.swift; sourceTree = "<group>"; };
+		70F1D0AE1CB7079500FA0369 /* SettingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingVC.swift; path = Setting/SettingVC.swift; sourceTree = "<group>"; };
 		70F1D0B11CB708DB00FA0369 /* ForgetPasswordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForgetPasswordVC.swift; path = Login/ForgetPasswordVC.swift; sourceTree = "<group>"; };
 		70F1D0B31CB70F6300FA0369 /* RestauratCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestauratCVCell.swift; path = Main/RestauratCVCell.swift; sourceTree = "<group>"; };
 		70F1D0B51CB712B300FA0369 /* SearchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchVC.swift; path = Main/SearchVC.swift; sourceTree = "<group>"; };
@@ -203,6 +219,12 @@
 		70F1D0A61CB60FCD00FA0369 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				706F2B881CC918B700465B60 /* ClientDetail+CoreDataProperties.swift */,
+				706F2B891CC918B700465B60 /* ClientDetail.swift */,
+				706F2B801CC9169300465B60 /* Score+CoreDataProperties.swift */,
+				706F2B811CC9169300465B60 /* Score.swift */,
+				706F2B821CC9169300465B60 /* Client+CoreDataProperties.swift */,
+				706F2B831CC9169300465B60 /* Client.swift */,
 				70F1D0E21CBE27A100FA0369 /* User+CoreDataProperties.swift */,
 				70F1D0E31CBE27A100FA0369 /* User.swift */,
 				70F1D0A41CB60FC800FA0369 /* GlobalVar.swift */,
@@ -218,7 +240,7 @@
 				70F1D0B31CB70F6300FA0369 /* RestauratCVCell.swift */,
 				70F1D0B51CB712B300FA0369 /* SearchVC.swift */,
 				706F2B7E1CC73EF900465B60 /* RestaurantTVCell.swift */,
-				706F2B7C1CC738CD00465B60 /* beauRoundCornerView.swift */,
+				706F2B7C1CC738CD00465B60 /* RoundCornerView.swift */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -226,7 +248,9 @@
 		70F1D0B01CB707AD00FA0369 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
-				70F1D0AE1CB7079500FA0369 /* SettingTVC.swift */,
+				70F1D0AE1CB7079500FA0369 /* SettingVC.swift */,
+				706F2B8E1CC9295B00465B60 /* SettingMenuTVCell.swift */,
+				706F2B8C1CC91FFA00465B60 /* TouchSensetiveView.swift */,
 				70F1D0BE1CB8AF4B00FA0369 /* UpdateInfoVC.swift */,
 			);
 			name = Setting;
@@ -416,21 +440,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				706F2B8A1CC918B700465B60 /* ClientDetail+CoreDataProperties.swift in Sources */,
 				70F1D0BF1CB8AF4B00FA0369 /* UpdateInfoVC.swift in Sources */,
 				70F1D0C11CB8B3F100FA0369 /* ImagedVC.swift in Sources */,
+				706F2B861CC9169300465B60 /* Client+CoreDataProperties.swift in Sources */,
 				70F1D09C1CB5F2CE00FA0369 /* UserLoginVC.swift in Sources */,
+				706F2B8F1CC9295B00465B60 /* SettingMenuTVCell.swift in Sources */,
+				706F2B871CC9169300465B60 /* Client.swift in Sources */,
+				706F2B8D1CC91FFA00465B60 /* TouchSensetiveView.swift in Sources */,
 				70F1D0B61CB712B300FA0369 /* SearchVC.swift in Sources */,
+				706F2B8B1CC918B700465B60 /* ClientDetail.swift in Sources */,
 				70F1D0E51CBE27A100FA0369 /* User.swift in Sources */,
 				70F1D0B21CB708DB00FA0369 /* ForgetPasswordVC.swift in Sources */,
 				70F1D0B41CB70F6300FA0369 /* RestauratCVCell.swift in Sources */,
-				70F1D0AF1CB7079500FA0369 /* SettingTVC.swift in Sources */,
+				70F1D0AF1CB7079500FA0369 /* SettingVC.swift in Sources */,
 				70F1D0AD1CB7072A00FA0369 /* HomeVC.swift in Sources */,
 				70F1D0E41CBE27A100FA0369 /* User+CoreDataProperties.swift in Sources */,
 				70F1D0A81CB705F300FA0369 /* WelcomeVC.swift in Sources */,
 				709076CA1CB5A1F3009A3101 /* beau.xcdatamodeld in Sources */,
 				706F2B7F1CC73EF900465B60 /* RestaurantTVCell.swift in Sources */,
 				70F1D0AA1CB706F000FA0369 /* CollectionVC.swift in Sources */,
-				706F2B7D1CC738CD00465B60 /* beauRoundCornerView.swift in Sources */,
+				706F2B851CC9169300465B60 /* Score.swift in Sources */,
+				706F2B841CC9169300465B60 /* Score+CoreDataProperties.swift in Sources */,
+				706F2B7D1CC738CD00465B60 /* RoundCornerView.swift in Sources */,
 				70F1D0B81CB738DE00FA0369 /* RegisterVC.swift in Sources */,
 				70F1D0A51CB60FC800FA0369 /* GlobalVar.swift in Sources */,
 				709076C21CB5A1F3009A3101 /* AppDelegate.swift in Sources */,
