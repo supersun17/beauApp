@@ -8,7 +8,6 @@
 
 import UIKit
 import CoreData
-import Alamofire
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -36,51 +35,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.window?.makeKeyAndVisible()
         }*/
         return true
-    }
-    
-    private func checkDirectLogin() -> Bool {
-        var ifDirect = false
-        let url = "\(GlobalVar.apiUrl)/login"
-        let parameters: Dictionary <String, String>? = [
-            "email": getUserEmail(),
-            "password": "",
-            "deviceID": GlobalVar.generatUUID()
-        ]
-        
-        dispatch_barrier_sync(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
-            Alamofire.request(.POST, url, parameters: parameters).responseString
-                { response in switch response.result {
-                case .Success(let json):
-                    print("Success with JSON: \(json)")
-                    if json == "success" {
-                        ifDirect = true
-                    }
-                    
-                case .Failure(let error):
-                    print("Request failed with error: \(error)")
-                    }
-                }
-        })
-        
-        return ifDirect
-    }
-    
-    private func getUserEmail() -> String {
-        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        let managedContext = appDelegate.managedObjectContext
-        let fetchRequest = NSFetchRequest(entityName: "User")
-        var User: [NSManagedObject]?
-        
-        do {
-            let results = try managedContext.executeFetchRequest(fetchRequest)
-            User = results as? [NSManagedObject]
-        } catch let error as NSError {
-            print("Could not fetch \(error), \(error.userInfo)")
-        }
-        
-        let email = User?.last?.valueForKey("userEmail") as! String
-        print("Appdelegate: \(email)")
-        return email
     }
 
     func applicationWillResignActive(application: UIApplication) {
