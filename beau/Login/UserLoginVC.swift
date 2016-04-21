@@ -77,18 +77,22 @@ class UserLoginVC: ImagedVC, UITextFieldDelegate, UITableViewDelegate, UITableVi
             { response in switch response.result {
             case .Success(let json):
                 print("Success with JSON: \(json)")
-                
-                if json == "success" {
-                    print("success")
+                switch(json) {
+                case "success":
                     self.save(self.userEmailText.text!)
                     self.loadingIndicator.stopAnimating()
                     self.performSegueWithIdentifier("LoginSuccessSegue", sender: self)
-                } else if json == "Please enter password" {
+                case "Please enter password":
                     self.popAlert("Please enter password")
                     self.loadingIndicator.stopAnimating()
-                } else if json == "error" {
+                case "error":
                     self.popAlert("Invalid password")
                     self.loadingIndicator.stopAnimating()
+                case "Please register first":
+                    self.popAlert("Email not found")
+                    self.loadingIndicator.stopAnimating()
+                default:
+                    break
                 }
                 
             case .Failure(let error):

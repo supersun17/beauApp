@@ -93,15 +93,16 @@ class RegisterVC: ImagedVC, UITextFieldDelegate, ValidationDelegate {
             { response in switch response.result {
             case .Success(let json):
                 print("Success with JSON: \(json)")
-                
-                if json == "success" {
-                    print("success")
+                switch(json) {
+                case "success":
                     self.save(self.userEmailText.text!)
                     self.performSegueWithIdentifier("RegSuccessSegue", sender: self)
                     self.loadingIndicator.stopAnimating()
-                } else if json == "The email has been registered" {
+                case "The email has been registered":
                     self.popAlert("This email has been registered")
                     self.loadingIndicator.stopAnimating()
+                default:
+                    break
                 }
                 
             case .Failure(let error):
