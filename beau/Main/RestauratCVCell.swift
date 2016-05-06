@@ -15,7 +15,7 @@ class RestauratCVCell: UICollectionViewCell {
     @IBOutlet weak var progressBar: UIProgressView!
     
     override func awakeFromNib() {
-        progressBar.progress = 0.5
+        progressBar.progress = 0.0
     }
     
 }

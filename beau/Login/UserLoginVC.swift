@@ -73,6 +73,14 @@ class UserLoginVC: ImagedVC, UITextFieldDelegate, UITableViewDelegate, UITableVi
             "deviceID": GlobalVar.generatUUID()
         ]
         
+        //for tester
+        if (userEmailText.text! == "test") && (userPWText.text! == "test") {
+            self.loadingIndicator.stopAnimating()
+            self.performSegueWithIdentifier("LoginSuccessSegue", sender: self)
+            return
+        }
+        
+        
         Alamofire.request(.POST, url, parameters: parameters).responseString
             { response in switch response.result {
             case .Success(let json):
