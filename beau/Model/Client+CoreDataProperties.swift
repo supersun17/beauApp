@@ -16,7 +16,5 @@ extension Client {
 
     @NSManaged var clientEmail: String?
     @NSManaged var clientName: String?
-    @NSManaged var gotScoreFor: Score?
-    @NSManaged var gotDetail: ClientDetail?
 
 }

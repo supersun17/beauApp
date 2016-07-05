@@ -17,6 +17,5 @@ extension User {
     @NSManaged var userEmail: String?
     @NSManaged var userName: String?
     @NSManaged var userQRCode: NSData?
-    @NSManaged var gotScoreAt: Score?
 
 }
