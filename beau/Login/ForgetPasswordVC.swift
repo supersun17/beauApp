@@ -66,7 +66,7 @@ class ForgetPasswordVC: ImagedVC, UITextFieldDelegate, ValidationDelegate {
             }
         }
         if codeTextField.hidden == true {
-            submitButton.enabled = false
+            
             validator.registerField(emailTextField, errorLabel: emailErrorLabel, rules: [RequiredRule(), EmailRule(message: "Invalid Email format")])
 
         } else {
@@ -81,6 +81,7 @@ class ForgetPasswordVC: ImagedVC, UITextFieldDelegate, ValidationDelegate {
     
     func validationSuccessful() {
         actionTitle.text! = "Succeed! Now please check your mail box and type in the 4 digit code below"
+        submitButton.enabled = false
         let url = "\(GlobalVar.apiUrl)/forgetPW"
         if codeTextField.hidden == true {
             let parameters: Dictionary <String, String>? = [
