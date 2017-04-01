@@ -26,9 +26,11 @@
 	<true/>
 	<key>NSAppTransportSecurity</key>
 	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
 		<key>NSExceptionDomains</key>
 		<dict>
-			<key>https://beau-remote.herokuapp.com</key>
+			<key>https://127.0.0.1:5000</key>
 			<dict>
 				<key>NSIncludesSubdomains</key>
 				<true/>

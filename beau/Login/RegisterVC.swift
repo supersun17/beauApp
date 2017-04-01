@@ -82,11 +82,11 @@ class RegisterVC: ImagedVC, UITextFieldDelegate, ValidationDelegate {
     
     func validationSuccessful() {
         loadingIndicator.startAnimating()
-        let url = "\(GlobalVar.apiUrl)/reg"
+        let url = "\(GlobalVar.apiUrl)/register"
         let parameters: Dictionary <String, String>? = [
-            "email": userEmailText.text!,
+            "userEmail": userEmailText.text!,
             "password": userPassword.text!,
-            "username": userNameText.text!
+            "userName": userNameText.text!
         ]
         
         Alamofire.request(.POST, url, parameters: parameters).responseString
@@ -94,7 +94,7 @@ class RegisterVC: ImagedVC, UITextFieldDelegate, ValidationDelegate {
             case .Success(let json):
                 print("Success with JSON: \(json)")
                 switch(json) {
-                case "success":
+                case "Success":
                     self.save(self.userEmailText.text!)
                     self.performSegueWithIdentifier("RegSuccessSegue", sender: self)
                     self.loadingIndicator.stopAnimating()

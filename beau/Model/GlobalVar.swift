@@ -9,7 +9,7 @@
 import UIKit
 
 public struct GlobalVar {
-    static let apiUrl = "https://beau-backend.herokuapp.com"
+    static let apiUrl = "http://127.0.0.1:5000"
     static let buttonRadius = CGFloat(5)
     
     static func generatUUID() -> String {

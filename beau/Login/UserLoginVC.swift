@@ -46,6 +46,7 @@ class UserLoginVC: ImagedVC, UITextFieldDelegate, UITableViewDelegate, UITableVi
         userPWText.delegate = self
         
         loginButton.layer.cornerRadius = GlobalVar.buttonRadius
+        loginButton.setTitleColor(UIColor.clearColor(), forState: UIControlState.Disabled)
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -66,47 +67,40 @@ class UserLoginVC: ImagedVC, UITextFieldDelegate, UITableViewDelegate, UITableVi
     
     @IBAction func loginButtonPressed(sender: UIButton) {
         loadingIndicator.startAnimating()
+        loginButton.enabled = false
+
         let url = "\(GlobalVar.apiUrl)/login"
         let parameters: Dictionary <String, String>? = [
-            "email": userEmailText.text!,
-            "password": userPWText.text!,
-            "deviceID": GlobalVar.generatUUID()
+            "userEmail": userEmailText.text!,
+            "password": userPWText.text!
+            //"deviceID": GlobalVar.generatUUID()
         ]
         
         //for tester
-        if (userEmailText.text! == "test") && (userPWText.text! == "test") {
-            self.loadingIndicator.stopAnimating()
-            self.performSegueWithIdentifier("LoginSuccessSegue", sender: self)
-            return
-        }
-        
         
         Alamofire.request(.POST, url, parameters: parameters).responseString
             { response in switch response.result {
             case .Success(let json):
                 print("Success with JSON: \(json)")
                 switch(json) {
-                case "success":
+                case "Success":
                     self.save(self.userEmailText.text!)
-                    self.loadingIndicator.stopAnimating()
                     self.performSegueWithIdentifier("LoginSuccessSegue", sender: self)
                 case "Please enter password":
                     self.popAlert("Please enter password")
-                    self.loadingIndicator.stopAnimating()
-                case "error":
+                case "Invalid password":
                     self.popAlert("Invalid password")
-                    self.loadingIndicator.stopAnimating()
                 case "Please register first":
                     self.popAlert("Email not found")
-                    self.loadingIndicator.stopAnimating()
                 default:
                     break
                 }
                 
             case .Failure(let error):
                 print("Request failed with error: \(error)")
-                self.loadingIndicator.stopAnimating()
                 }
+            self.loadingIndicator.stopAnimating()
+            self.loginButton.enabled = true
         }
     }
     
